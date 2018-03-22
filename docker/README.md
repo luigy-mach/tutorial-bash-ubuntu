@@ -1,4 +1,12 @@
+
+
+[TOC]
+
 # Tutorial-docker
+
+------
+
+
 
 #### Dependencias
 ```console
@@ -50,8 +58,15 @@ foo@bar:~$ sudo apt-get install -y nvidia-docker
 foo@bar:~$ sudo pkill -SIGHUP dockerd
 ```
 
-
 # Ref: 
+
+[1]: https://pjreddie.com/darknet/yolo/
+[2]: https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
+[3]: https://github.com/NVIDIA/nvidia-docker
+[4]: https://hub.docker.com/r/luigymach/yolo-ubuntu-xfce-vnc/
+
+
+
 - https://pjreddie.com/darknet/yolo/
 - https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
 - https://github.com/NVIDIA/nvidia-docker
