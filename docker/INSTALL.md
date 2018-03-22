@@ -1,4 +1,11 @@
-   * [Tutorial-docker](#tutorial-docker)
+
+# Instalacion
+
+## [Retornar](./README.md)
+## Contenido
+   * [Instalacion](#instalacion)
+      * [<a href="./README.md">Retornar</a>](#retornar)
+      * [Contenido](#contenido)
       * [Dependencias](#dependencias)
       * [Instalacion docker-ce](#instalacion-docker-ce)
          * [Eliminar versiones anteriores](#eliminar-versiones-anteriores)
@@ -8,11 +15,6 @@
          * [Dependencias](#dependencias-1)
          * [nvidia-docker install  on <code>ubuntu16.04</code>](#nvidia-docker-install--on-ubuntu1604)
    * [Ref:](#ref)
-
-
-
-# Tutorial-docker
-
 
 ## Dependencias
 ```console
@@ -65,13 +67,6 @@ foo@bar:~$ sudo pkill -SIGHUP dockerd
 ```
 
 # Ref: 
-
-[1]: https://pjreddie.com/darknet/yolo/
-[2]: https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
-[3]: https://github.com/NVIDIA/nvidia-docker
-[4]: https://hub.docker.com/r/luigymach/yolo-ubuntu-xfce-vnc/
-
-
 
 - https://pjreddie.com/darknet/yolo/
 - https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
