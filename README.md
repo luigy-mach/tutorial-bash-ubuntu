@@ -1,9 +1,12 @@
 
-# Caminando en `ubuntu`.
+Caminando en `ubuntu`.
+======================
+
 El objetivo de esta guía es dar conocimientos de nivel básico/intermedio sobre el funcionamiento de docker,git,bash,etc... y asi poder aplicarlos de manera práctica.
 
 
-## Contenido
+Contenido
+---------
    * [Caminando en ubuntu.](#caminando-en-ubuntu)
       * [Quiero colaborar con desarrlo de esta guia.](#quiero-colaborar-con-desarrlo-de-esta-guia)
       * [Contenido](#contenido)
@@ -12,10 +15,12 @@ El objetivo de esta guía es dar conocimientos de nivel básico/intermedio sobre
       * [Ejemplos](#ejemplos)
 
 
-## [Git and Github](agregar-link)
-## [Docker](./docker/README.md)
-## [Comandos BASH](./bash/README.md)
-
+[Git and Github](agregar-link)
+------------------------------
+[Docker](./docker/README.md)
+-----------------------------
+[Comandos BASH](./bash/README.md)
+--------------------------------
 
 ***
 ***
