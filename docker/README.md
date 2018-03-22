@@ -3,7 +3,6 @@
 
 ## Contenido 
 
-
    * [docker](#docker)
       * [Contenido](#contenido)
       * [<a href="./INSTALL.md">Instalacion</a>](#instalacion)
@@ -13,14 +12,14 @@
       * [¿Como usar docker?](#como-usar-docker)
          * [¿Qué es una contenedor?](#qué-es-una-contenedor)
          * [¿Qué es una instancia?](#qué-es-una-instancia)
-         * [¿Que es una imagen?](#que-es-una-imagen)
+         * [¿Qué es una imagen?](#qué-es-una-imagen)
       * [Comando básicos](#comando-básicos)
-         * [¿Que imagenes tengo?](#que-imagenes-tengo)
-         * [¿Que instancias estan activas?](#que-instancias-estan-activas)
-         * [¿Que instancias estan inactivas?](#que-instancias-estan-inactivas)
+         * [¿Qué imagenes tengo?](#qué-imagenes-tengo)
+         * [¿Qué instancias estan activas?](#qué-instancias-estan-activas)
+         * [¿Qué instancias estan inactivas?](#qué-instancias-estan-inactivas)
             * [Note que tambien se muestran las instancias que fueron desechadas](#note-que-tambien-se-muestran-las-instancias-que-fueron-desechadas)
-      * [Descargar una imagen de https://hub.docker.com/](#descargar-una-imagen-de-httpshubdockercom)
-      * [cambiar de nombre a imagen descargada](#cambiar-de-nombre-a-imagen-descargada)
+         * [Descargar una imagen de https://hub.docker.com/](#descargar-una-imagen-de-httpshubdockercom)
+      * [Cambiar de nombre a imagen descargada](#cambiar-de-nombre-a-imagen-descargada)
       * [Ejecucion](#ejecucion)
          * [Crear nueva instancia de una imagen](#crear-nueva-instancia-de-una-imagen)
             * [run](#run)
@@ -38,7 +37,8 @@
             * [borrar toda las instancias inactivas](#borrar-toda-las-instancias-inactivas)
       * [Ejemplos del autor.](#ejemplos-del-autor)
          * [<a href="./SPARK-HADOOP.md">Spark y hadoop</a>](#spark-y-hadoop)
-         * [<a href="./VNC-CUDA-OPENCV.md">VNC-cuda-opencv</a>](#vnc-cuda-opencv)
+         * [<a href="./YOLO-VNC-CUDA-OPENCV.md">VNC-cuda-opencv</a>](#vnc-cuda-opencv)
+
 
 
 
@@ -51,19 +51,19 @@
 
 ### ¿Qué es una contenedor?
 ### ¿Qué es una instancia?
-### ¿Que es una imagen?
+### ¿Qué es una imagen?
 
 
 
 ## Comando básicos
-### ¿Que `imagenes` tengo?
+### ¿Qué `imagenes` tengo?
 ```console
 foo@bar:~$ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 REPOSITORY                       TAG                 IMAGE ID            CREATED             SIZE
 luigymach/yolo-ubuntu-xfce-vnc   2.1.0               0b8381ae1f95        7 weeks ago         8.67GB
 ```
-### ¿Que instancias estan activas?
+### ¿Qué instancias estan activas?
 
 ```console
 foo@bar:~$ sudo docker ps
@@ -74,7 +74,7 @@ cfde2bf32000        luigymach/yolo-ubuntu-xfce-vnc:2.1.0   "/dockerstartup/vnc_�
 
 ```
 
-### ¿Que instancias estan inactivas?
+### ¿Qué instancias estan inactivas?
 
 ```console
 foo@bar:~$ sudo docker ps -a
@@ -88,7 +88,7 @@ cfde2bf32000        luigymach/yolo-ubuntu-xfce-vnc:2.1.0       "/dockerstartup/v
 #### Note que tambien se muestran las instancias que fueron `desechadas`
 
 
-## Descargar una imagen de `https://hub.docker.com/`
+### Descargar una imagen de `https://hub.docker.com/`
 
 Dirigirse a	un repositorio cualquiera, por ejemplo [Hello-work](https://hub.docker.com/_/hello-world/) 
 
@@ -111,9 +111,9 @@ Status: Image is up to date for hello-world:latest
 ```
 podemos verificar con el comando `sudo docker images` visto anteriormente.
 
-## cambiar de nombre a `imagen descargada`
-To tag a local image with ID “0e5574283393” into the “fedora” repository with “version1.0”:
-Para esto se necesita el `IMAGE ID` de la imagen con [docker images](#¿Que `imagenes` tengo?) 
+## Cambiar de nombre a `imagen descargada`
+
+Para esto se necesita el `IMAGE ID` de la imagen con [docker images](#qué-imagenes-tengo) 
 - sudo docker [ID] [nombre-nuevo:version-nueva]
 
 
@@ -155,7 +155,7 @@ foo@bar:~$
 
 ### kill
 #### matar una instancia
-Es nesario saber el `CONTAINER ID` de la instancia viva, ver comando [docker ps](#¿Que instancias estan activas?)
+Es nesario saber el `CONTAINER ID` de la instancia viva, ver comando [docker ps](#qué-instancias-estan-activas)
 - sudo docker kill [CONTAINER ID] 
 
 ```console
@@ -191,6 +191,6 @@ foo@bar:~$ sudo docker rm $(sudo docker ps -aq)
 
 ## Ejemplos del autor.
 ### [Spark y hadoop](./SPARK-HADOOP.md)
-### [VNC-cuda-opencv](./VNC-CUDA-OPENCV.md)
+### [VNC-cuda-opencv](./YOLO-VNC-CUDA-OPENCV.md)
 
 
