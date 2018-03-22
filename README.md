@@ -7,6 +7,8 @@ Comunicate con (luigy.mach.arc@gmail.com)
 
 ## Contenido
    * [Caminando en ubuntu.](#caminando-en-ubuntu)
+      * [Quiero colaborar con desarrlo de esta guia.](#quiero-colaborar-con-desarrlo-de-esta-guia)
+      * [Contenido](#contenido)
       * [<a href="./docker/README.md">Docker</a>](#docker)
       * [<a href="./bash/README.md">Comandos BASH</a>](#comandos-bash)
       * [Ejemplos](#ejemplos)
