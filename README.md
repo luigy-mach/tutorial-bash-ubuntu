@@ -1,6 +1,6 @@
 
 # Caminando en `ubuntu`.
-El objetivo de esta guía es dar a conocer unos conocimientos de nivel básico/intermedio sobre el funcionamiento de docker,git,bash,etc... y asi poder aplicarlos de manera práctica siguiendo una metodología. 
+El objetivo de esta guía es dar conocimientos de nivel básico/intermedio sobre el funcionamiento de docker,git,bash,etc... y asi poder aplicarlos de manera práctica.
 
 ## Quiero colaborar con desarrlo de esta guia.
 Comunicate con (luigy.mach.arc@gmail.com)
