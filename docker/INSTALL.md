@@ -1,8 +1,11 @@
 
-# Instalacion
+Instalacion
+===========
 
-## [Retornar](./README.md)
-## Contenido
+[Retornar](./README.md)
+-----------------------
+Contenido
+----------
    * [Instalacion](#instalacion)
       * [<a href="./README.md">Retornar</a>](#retornar)
       * [Contenido](#contenido)
@@ -14,14 +17,21 @@
       * [Instalacion nvidia-docker](#instalacion-nvidia-docker)
          * [Dependencias](#dependencias-1)
          * [nvidia-docker install  on <code>ubuntu16.04</code>](#nvidia-docker-install--on-ubuntu1604)
-   * [Ref:](#ref)
+   * [Referencias:](#referencias)
 
-## Dependencias
+
+
+
+
+Dependencias
+-------------
 ```console
 foo@bar:~$ sudo apt-get install curl
 ```
-## Instalacion `docker-ce`
 
+
+Instalacion `docker-ce`
+-------------
 ### Eliminar versiones anteriores 
 ```console
 foo@bar:~$ sudo apt-get remove docker docker-engine docker.io
@@ -47,8 +57,8 @@ foo@bar:~$ sudo apt-get install docker-ce
 ```console
 foo@bar:~$ sudo docker run hello-world
 ```
-## Instalacion nvidia-docker
-
+Instalacion nvidia-docker
+--------------------------
 
 ### Dependencias
 - tener instalado los driver y `cuda-8`  
@@ -66,7 +76,8 @@ foo@bar:~$ sudo apt-get install -y nvidia-docker
 foo@bar:~$ sudo pkill -SIGHUP dockerd
 ```
 
-# Ref: 
+Referencias: 
+============
 
 - https://pjreddie.com/darknet/yolo/
 - https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
