@@ -137,8 +137,8 @@ foo@bar:~$ ./darknet detector demo cfg/coco.data cfg/yolo.cfg yolo.weights video
 Referencias: 
 -------------
 
-- https://pjreddie.com/darknet/yolo/
-- https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1	
-- https://github.com/NVIDIA/nvidia-docker
-- https://hub.docker.com/r/luigymach/yolo-ubuntu-xfce-vnc/
+- `https://pjreddie.com/darknet/yolo/`
+- `https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1`
+- `https://github.com/NVIDIA/nvidia-docker`
+- `https://hub.docker.com/r/luigymach/yolo-ubuntu-xfce-vnc/`
 
