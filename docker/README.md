@@ -45,7 +45,7 @@ Contenido
             * [borrar toda las instancias inactivas](#borrar-toda-las-instancias-inactivas)
       * [Ejemplos del autor.](#ejemplos-del-autor)
          * [<a href="./SPARK-HADOOP.md">Spark y hadoop</a>](#spark-y-hadoop)
-         * [<a href="./YOLO-VNC-CUDA-OPENCV.md">VNC-cuda-opencv</a>](#vnc-cuda-opencv)
+         * [<a href="./YOLO-VNC-CUDA-OPENCV.md">YOLO-VNC-cuda-opencv</a>](#yolo-vnc-cuda-opencv)
 
 
 
@@ -231,6 +231,6 @@ Ejemplos del autor.
 --------------------
 
 ### [Spark y hadoop](./SPARK-HADOOP.md)
-### [VNC-cuda-opencv](./YOLO-VNC-CUDA-OPENCV.md)
+### [YOLO-VNC-cuda-opencv](./YOLO-VNC-CUDA-OPENCV.md)
 
 
