@@ -105,14 +105,15 @@ foo@bar:~$ wget https://pjreddie.com/media/files/yolo.weights -P ~/yolo/darknet
 
 Ejecutando maquina virtual
 ------------------------------	
-- `sudo nvidia-docker run -it --user 0 -p 5901:5901 -p 6901:6901 -v "\[carpeta-a-montar\]:\[ubicacion-dentro-de-docker\]" \[nombre-de-la-imagen\]:\[tag-version\] bash`
+- `sudo nvidia-docker run -it --user 0 -p 5901:5901 -p 6901:6901 -v "[carpeta-a-montar]:[ubicacion-dentro-de-docker]" [nombre-de-la-imagen]:[tag-version] bash`
+
 ```console
 foo@bar:~$ sudo nvidia-docker run -it --user 0 -p 5901:5901 -p 6901:6901 -v "/home/$USER/yolo:/headless/Desktop" luigymach/yolo-ubuntu-xfce-vnc:2.1.0 bash
 ```
 
 Ingresar a la maquina virtual docker desde un navegador
 -------------------------------------------------------
-- `http://\[my-ip\]:6901/`
+- `http://[my-ip]:6901/`
 - pass: vncpassword
 
 
@@ -124,7 +125,7 @@ Dentro de la carpeta darknet ubicada en Desktop
 foo@bar:~$ make
 ```
 
-- `./darknet detector demo cfg/coco.data cfg/yolo.cfg \[ubicacion-pesos.weights\] \[video-test\]`
+- `./darknet detector demo cfg/coco.data cfg/yolo.cfg [ubicacion-pesos.weights] [video-test]`
 
 
 ```console
