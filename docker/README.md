@@ -9,46 +9,6 @@
 Contenido 
 ---------
 
-   * [docker](#docker)
-      * [<a href="/README.md">Retornar</a>](#retornar)
-      * [Contenido](#contenido)
-      * [<a href="./INSTALL.md">Instalacion</a>](#instalacion)
-      * [¿Que es docker?](#que-es-docker)
-      * [¿Para que sirve?](#para-que-sirve)
-      * [¿Que es docker hub?](#que-es-docker-hub)
-      * [¿Como usar docker?](#como-usar-docker)
-         * [¿Qué es una contenedor?](#qué-es-una-contenedor)
-         * [¿Qué es una instancia?](#qué-es-una-instancia)
-         * [¿Qué es una imagen?](#qué-es-una-imagen)
-      * [Comando básicos](#comando-básicos)
-         * [¿Qué imagenes tengo?](#qué-imagenes-tengo)
-         * [¿Qué instancias estan activas?](#qué-instancias-estan-activas)
-         * [¿Qué instancias estan inactivas?](#qué-instancias-estan-inactivas)
-         * [Descargar una imagen de https://hub.docker.com/](#descargar-una-imagen-de-httpshubdockercom)
-      * [Cambiar de nombre a imagen descargada](#cambiar-de-nombre-a-imagen-descargada)
-      * [Ejecucion](#ejecucion)
-         * [Crear nueva instancia de una imagen](#crear-nueva-instancia-de-una-imagen)
-            * [run](#run)
-         * [acceder a instancia ya creada](#acceder-a-instancia-ya-creada)
-            * [exec](#exec)
-      * [Guardar cambios de una instancia de docker](#guardar-cambios-de-una-instancia-de-docker)
-         * [Commit](#commit)
-         * [Guardar imagen](#guardar-imagen)
-         * [Cargar imagen](#cargar-imagen)
-      * [Borrar](#borrar)
-         * [kill](#kill)
-            * [matar una instancia](#matar-una-instancia)
-            * [matar toda las instancias](#matar-toda-las-instancias)
-         * [rm](#rm)
-            * [Borrar una imagen](#borrar-una-imagen)
-            * [Borrar una instancia desecha](#borrar-una-instancia-desecha)
-            * [borrar toda las instancias inactivas](#borrar-toda-las-instancias-inactivas)
-      * [Ejemplos del autor.](#ejemplos-del-autor)
-         * [<a href="./SPARK-HADOOP.md">Spark y hadoop</a>](#spark-y-hadoop)
-         * [<a href="./YOLO-VNC-CUDA-OPENCV.md">YOLO-VNC-cuda-opencv</a>](#yolo-vnc-cuda-opencv)
-
-
-
 
 
 [Instalacion](./INSTALL.md)
@@ -234,3 +194,10 @@ Ejemplos del autor.
 ### [YOLO-VNC-cuda-opencv](./YOLO-VNC-CUDA-OPENCV.md)
 
 
+
+
+
+
+Referencias
+===========
+- https://docs.docker.com/

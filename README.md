@@ -8,21 +8,13 @@ El objetivo de esta guía es dar conocimientos de nivel básico/intermedio sobre
 Contenido
 ---------
 
+#### [Git and Github](agregar-link)
 
+#### [Docker](./docker/README.md)
 
-[Git and Github](agregar-link)
+### [Comandos BASH](./bash/README.md)
 
-
-
-[Docker](./docker/README.md)
-
-
-
-[Comandos BASH](./bash/README.md)
-
-
-[Comandos BASH](https://github.com/piratax007/LaTeX_Course/blob/master/README.md)
-
+### [Curso Latex](https://github.com/piratax007/LaTeX_Course/blob/master/README.md)
 
 
 
@@ -32,6 +24,6 @@ Contenido
 
 Quiero colaborar con el desarrollo de esta guia.
 ------------------------------------------------
-Comunicate conmigo (luigy.mach.arc@gmail.com)
+Comunicate conmigo (`luigy.mach.arc@gmail.com`)
 
 
