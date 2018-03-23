@@ -7,25 +7,24 @@ El objetivo de esta guía es dar conocimientos de nivel básico/intermedio sobre
 
 Contenido
 ---------
-   * [Caminando en ubuntu.](#caminando-en-ubuntu)
-      * [Contenido](#contenido)
-      * [<a href="agregar-link">Git and Github</a>](#git-and-github)
-      * [<a href="./docker/README.md">Docker</a>](#docker)
-      * [<a href="./bash/README.md">Comandos BASH</a>](#comandos-bash)
-      * [Quiero colaborar con el desarrollo de esta guia.](#quiero-colaborar-con-el-desarrollo-de-esta-guia)
 
 
 
 [Git and Github](agregar-link)
-------------------------------
+
 
 
 [Docker](./docker/README.md)
------------------------------
+
 
 
 [Comandos BASH](./bash/README.md)
---------------------------------
+
+
+[Comandos BASH](https://github.com/piratax007/LaTeX_Course/blob/master/README.md)
+
+
+
 
 ***
 ---
