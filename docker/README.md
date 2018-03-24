@@ -9,7 +9,6 @@
 Contenido 
 ---------
 
-
    * [docker](#docker)
       * [<a href="/README.md">Retornar</a>](#retornar)
       * [Contenido](#contenido)
@@ -20,15 +19,15 @@ Contenido
       * [Qué es docker hub?](#qué-es-docker-hub)
          * [Como descargar una imagen](#como-descargar-una-imagen)
       * [Comandos básicos](#comandos-básicos)
+         * [Descargar una imagen pull](#descargar-una-imagen-pull)
          * [images disponibles](#images-disponibles)
          * [Instancias activas ps](#instancias-activas-ps)
          * [Instancias inactivas ps -a](#instancias-inactivas-ps--a)
-         * [Descargar una imagen pull](#descargar-una-imagen-pull)
          * [Cambiar de nombre a imagen tag](#cambiar-de-nombre-a-imagen-tag)
          * [Guardar imagen save](#guardar-imagen-save)
          * [Cargar imagen load](#cargar-imagen-load)
          * [Borrar una imagen rmi](#borrar-una-imagen-rmi)
-      * [Ejecucion](#ejecucion)
+      * [Correr instancias](#correr-instancias)
          * [Primer plano run -it](#primer-plano-run--it)
          * [Segundo plano run -d](#segundo-plano-run--d)
          * [Entrar a una instancian en segundo plano exec](#entrar-a-una-instancian-en-segundo-plano-exec)
@@ -37,12 +36,18 @@ Contenido
          * [Matar toda las instancias activas](#matar-toda-las-instancias-activas)
          * [Borrar una instancia desecha](#borrar-una-instancia-desecha)
          * [Borrar toda las instancias inactivas](#borrar-toda-las-instancias-inactivas)
-      * [Subir imagen de docker a <code>docker hub</code>](#subir-imagen-de-docker-a-docker-hub)
+      * [Subir un image a <code>docker hub</code>](#subir-un-image-a-docker-hub)
+         * [commit](#commit)
+      * [Subir un image a <code>docker hub</code>](#subir-un-image-a-docker-hub-1)
          * [push](#push)
       * [Ejemplos del autor.](#ejemplos-del-autor)
          * [<a href="./SPARK-HADOOP.md">Spark y hadoop</a>](#spark-y-hadoop)
          * [<a href="./YOLO-VNC-CUDA-OPENCV.md">YOLO-VNC-cuda-opencv</a>](#yolo-vnc-cuda-opencv)
    * [Referencias](#referencias)
+
+
+
+
 
 
 
@@ -102,6 +107,32 @@ se debe usar el comando [`pull`](#descargar-una-imagen-pull)
 Comandos básicos
 ----------------
 
+### Descargar una imagen `pull`
+
+- Dirigirse a un repositorio de su elección
+  - Por ejemplo [Hello-work](https://hub.docker.com/_/hello-world/) 
+
+- Copiar el contenido de **Docker Pull Command**
+  - por ejemplo **`docker pull hello-world`**
+
+```console
+foo@bar:~$ sudo docker pull hello-world
+
+```
+- Nos mostrara el siguiente mensaje.
+
+```console
+foo@bar:~$ sudo docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+Digest: sha256:97ce6fa4b6cdc0790cda65fe7290b74cfebd9fa0c9b8c38e979330d547d22ce1
+Status: Image is up to date for hello-world:latest
+
+```
+- Podemos verificar con el comando [`images`](#images-disponibles) visto anteriormente.
+
+
+
 ### `images` disponibles 
 - Nos muestra que `images` locales tengo.
 
@@ -139,31 +170,6 @@ ea4f374da77b        luigymach/yolo-ubuntu-xfce-vnc:2.1.0       "/dockerstartup/v
 7382d5afbb0a        luigymach/yolo-ubuntu-xfce-vnc:2.1.0       "/dockerstartup/vnc_…"   4 hours ago         Up 4 hours                 0.0.0.0:5902->5901/tcp, 0.0.0.0:6902->6901/tcp   fervent_carson
 cfde2bf32000        luigymach/yolo-ubuntu-xfce-vnc:2.1.0       "/dockerstartup/vnc_…"   4 hours ago         Up 4 hours                 0.0.0.0:5901->5901/tcp, 0.0.0.0:6901->6901/tcp   goofy_sammet
 ```
-
-
-### Descargar una imagen `pull`
-
-- Dirigirse a un repositorio de su elección
-  - Por ejemplo [Hello-work](https://hub.docker.com/_/hello-world/) 
-
-- Copiar el contenido de **Docker Pull Command**
-  - por ejemplo **`docker pull hello-world`**
-
-```console
-foo@bar:~$ sudo docker pull hello-world
-
-```
-- Nos mostrara el siguiente mensaje.
-
-```console
-foo@bar:~$ sudo docker pull hello-world
-Using default tag: latest
-latest: Pulling from library/hello-world
-Digest: sha256:97ce6fa4b6cdc0790cda65fe7290b74cfebd9fa0c9b8c38e979330d547d22ce1
-Status: Image is up to date for hello-world:latest
-
-```
-- Podemos verificar con el comando [`images`](#images-disponibles) visto anteriormente.
 
 
 
@@ -258,8 +264,8 @@ Deleted: fd484f19954f4920da7ff372b5067f5b7ddb2fd3830cecd17b96ea9e286ba5b8
 
 
 
-Ejecucion
-----------
+Correr instancias
+-----------------
 
 Existe dos formas de `crear una instancia` de docker:
 
@@ -317,7 +323,7 @@ Cliclo de vida de una `instancia` de docker
 ### Matar una instancia `kill`
 - Es necesario saber el `CONTAINER ID` de la **instancia viva**, 
    - ver comando: [docker ps](#instancias-activas-ps)
-   - sudo docker kill [CONTAINER ID] 
+   - `sudo docker kill [CONTAINER ID]`
 
 ```console
 foo@bar:~$ sudo docker kill ea4f374da77b
@@ -333,7 +339,7 @@ foo@bar:~$ sudo docker kill $(sudo docker ps -aq)
 ### Borrar una instancia desecha
 - Es necesario saber el `CONTAINER ID` de la **instancia inactiva**, 
    - ver comando: [docker ps -a](#instancias-activas-ps)
-   - sudo docker rm [CONTAINER ID] 
+   - `sudo docker rm [CONTAINER ID]` 
 ```console
 foo@bar:~$ sudo docker rm ea456g6da77
 ```
@@ -363,6 +369,41 @@ Options:
 
 
 
+
+
+
+
+Subir un `image` a `docker hub`
+---------------------------------------
+
+ ### commit
+
+- Si deseamos `guardar` los cambios que hicimos dentro de una `instancia` de docker. Haremos lo siguiente:
+
+   - Necesitamos saber que `instancias` tenemos activas.
+```console
+foo@bar:~$ sudo docker ps
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS              NAMES
+c3f279d17e0a        ubuntu:12.04        /bin/bash           7 days ago          Up 25 hours                            desperate_dubinsky
+197387f1b436        ubuntu:12.04        /bin/bash           7 days ago          Up 25 hours                            focused_hamilton
+```
+
+   - Luego ejecutaremos el comando `commit` guiamos de la siguiente estructura
+   - `sudo docker commit [CONTAINER ID]  [nombre-que-deseamos-poner]:[version]`
+
+```console
+foo@bar:~$ sudo docker commit c3f279d17e0a  testimage:version3
+
+f5283438590d
+
+foo@bar:~$ sudo docker images
+
+REPOSITORY                        TAG                 ID                  CREATED             SIZE
+svendowideit/testimage            version3            f5283438590d        16 seconds ago      335.7 MB
+```
+
+> NOTA: Si la instancia se encuentra `inactiva` tambien es posible aplicar el comando `commit`
 
 
 
