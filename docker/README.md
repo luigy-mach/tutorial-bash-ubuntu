@@ -32,7 +32,7 @@ Qué es `docker`?
 
 - En contraste con una `**maquina virtual **`(VM, *vitual machine*) que ejecuta un sistema operativo completo con `acceso virtual`, es decir que tiene acceso a los recursos de la maquina hospedera (host) esto se da atravez del `hypervisor`
 
-![](https://github.com/luigy-mach/tutoriales/tree/master/docker/images/docker-and-VM.png)
+![docker and VM](https://github.com/luigy-mach/tutoriales/tree/master/docker/images/dockerAndVM.png)
 
 
 [Instalacion](./INSTALL.md)
@@ -45,7 +45,7 @@ Qué es `docker hub`?
 
 - Esto proporciona un recurso centralizados para guardar,distribuir y colaborar con equipos de trabajo.
 
-![docker and VM](https://github.com/luigy-mach/tutoriales/tree/master/docker/images/docker-hub.png)
+![docker and VM](https://github.com/luigy-mach/tutoriales/tree/master/docker/images/dockerHub.png)
 
 > NOTA: Puedes buscar y descargar `docker images` sin tener una cuenta, siembargo para subir alguna `imagen` debes tener una cuenta.
 
