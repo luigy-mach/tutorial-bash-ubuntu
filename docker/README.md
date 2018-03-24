@@ -16,21 +16,21 @@ Qué es `docker`?
 `Docker` es una plataforma para desarrolladores y [sysadmins](https://en.wikipedia.org/wiki/System_administrator) para **desarrollar, deployar y correr** aplicaciones con **containers**. 
 
 ### Imagenes y containers
-- [`**runtime**`](https://stackoverflow.com/questions/3900549/what-is-runtime) en general este termino se refieres a cualquier libreria, framewokr o plataforma donde tu codigo corre. 
+- [**`runtime`**](https://stackoverflow.com/questions/3900549/what-is-runtime) en general este termino se refieres a cualquier libreria, framewokr o plataforma donde tu codigo corre. 
 
 - Un `container` se inicia cuando ejecutamos una imagen.
-- Una `**image**` es una paquete ejecutable que incluye todo lo necesario para ejecutar una aplicacion, o sea, codigo, entornos de ejecución(*runtimes*) ,librerias, variables global es y configuracion de archivos.
+- Una **`image`** es una paquete ejecutable que incluye todo lo necesario para ejecutar una aplicacion, o sea, codigo, entornos de ejecución(*runtimes*) ,librerias, variables global es y configuracion de archivos.
 
-- Un `**container**` es una instancia **runtime** de una **imagen**; es decir una imagen se convierte en memoria cuando se ejecuta (`una imagen con estado o proceso de usuario`)
+- Un **`container`** es una instancia **runtime** de una **imagen**; es decir una imagen se convierte en memoria cuando se ejecuta (`una imagen con estado o proceso de usuario`)
 
 
 
 `Container` y maquinas virtuales
 ----------------------------
-- Un `**container**` se ejecuta nativamente sobre linux y comparte el kernel de la maquina huesped (host) con otros `containers`. Se ejecuta como un proceso discreto, no ocupa más memoria que otro ejecutable, convirtiendolo en super ligero.
+- Un **`container`** se ejecuta nativamente sobre linux y comparte el kernel de la maquina huesped (host) con otros `containers`. Se ejecuta como un proceso discreto, no ocupa más memoria que otro ejecutable, convirtiendolo en super ligero.
 
 
-- En contraste con una `**maquina virtual**`(VM, *vitual machine*) que ejecuta un sistema operativo completo con `acceso virtual`, es decir que tiene acceso a los recursos de la maquina hospedera (host) esto se da atravez del `hypervisor`
+- En contraste con una **`maquina virtual`**(VM, *vitual machine*) que ejecuta un sistema operativo completo con `acceso virtual`, es decir que tiene acceso a los recursos de la maquina hospedera (host) esto se da atravez del `hypervisor`
 
 ![docker vs VM|512x397](./images/dockerAndVM.png)
 
@@ -45,7 +45,7 @@ Qué es `docker hub`?
 
 - Esto proporciona un recurso centralizados para guardar,distribuir y colaborar con equipos de trabajo.
 
-![alt text](https://github.com/luigy-mach/tutoriales/tree/master/docker/images/dockerHub.png)
+![docker hub](./images/dockerHub.png)
 
 > NOTA: Puedes buscar y descargar `docker images` sin tener una cuenta, siembargo para subir alguna `imagen` debes tener una cuenta.
 
@@ -91,7 +91,7 @@ cfde2bf32000        luigymach/yolo-ubuntu-xfce-vnc:2.1.0   "/dockerstartup/vnc_�
 
 ### Instancias inactivas `ps -a`
 - Nos muestra que `instancias` **activas y inactivas** de `imagenes de docker` tenemos.
-> Note que tambien se muestran las instancias que fueron `**desechadas**`(inactivas)
+> Note que tambien se muestran las instancias que fueron **`desechadas`**(inactivas)
 
 ```console
 foo@bar:~$ sudo docker ps -a
@@ -110,7 +110,7 @@ cfde2bf32000        luigymach/yolo-ubuntu-xfce-vnc:2.1.0       "/dockerstartup/v
   - Por ejemplo [Hello-work](https://hub.docker.com/_/hello-world/) 
 
 - Copiar el contenido de **Docker Pull Command**
-  - por ejemplo `**docker pull hello-world**`
+  - por ejemplo **`docker pull hello-world`**
 
 ```console
 foo@bar:~$ sudo docker pull hello-world
@@ -234,7 +234,7 @@ Existe dos formas de `crear una instancia` de docker:
 foo@bar:~$ sudo docker **run -ti** ubuntu:14.04 /bin/bash
 ```
   - t: Asigna una tty (hace referencia a una **consola/terminal** en linux)
-  - i: Nos comunicamos con el contenedor de `**modo interactivo**`.
+  - i: Nos comunicamos con el contenedor de **`modo interactivo`**.
 
 > **NOTA**: Al salir del **modo interactivo** el contenedor se detendrá.
 
@@ -260,7 +260,7 @@ foo@bar:~$ sudo docker **run -d** -p 8080:8080 python:2.7 python -m SimpleHTTPSe
 foo@bar:~$ sudo docker exec -ti <container-id> /bin/bash
 ```
   - t: Asigna una tty (hace referencia a una **consola/terminal** en linux)
-  - i: Nos comunicamos con el contenedor de `**modo interactivo**`.
+  - i: Nos comunicamos con el contenedor de **`modo interactivo`**.
 
 > **NOTA**: Al salir del **modo interactivo** en **Detached Mode**  el contenedor no se detendrá.
 
