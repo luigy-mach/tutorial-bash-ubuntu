@@ -10,6 +10,43 @@ Contenido
 ---------
 
 
+   * [docker](#docker)
+      * [<a href="/README.md">Retornar</a>](#retornar)
+      * [Contenido](#contenido)
+      * [Qué es docker?](#qué-es-docker)
+         * [Imagenes y containers](#imagenes-y-containers)
+      * [Container y maquinas virtuales](#container-y-maquinas-virtuales)
+      * [<a href="./INSTALL.md">Instalacion</a>](#instalacion)
+      * [Qué es docker hub?](#qué-es-docker-hub)
+         * [Como descargar una imagen](#como-descargar-una-imagen)
+      * [Comandos básicos](#comandos-básicos)
+         * [images disponibles](#images-disponibles)
+         * [Instancias activas ps](#instancias-activas-ps)
+         * [Instancias inactivas ps -a](#instancias-inactivas-ps--a)
+         * [Descargar una imagen pull](#descargar-una-imagen-pull)
+         * [Cambiar de nombre a imagen tag](#cambiar-de-nombre-a-imagen-tag)
+         * [Guardar imagen save](#guardar-imagen-save)
+         * [Cargar imagen load](#cargar-imagen-load)
+         * [Borrar una imagen rmi](#borrar-una-imagen-rmi)
+      * [Ejecucion](#ejecucion)
+         * [Primer plano run -it](#primer-plano-run--it)
+         * [Segundo plano run -d](#segundo-plano-run--d)
+         * [Entrar a una instancian en segundo plano exec](#entrar-a-una-instancian-en-segundo-plano-exec)
+      * [Cliclo de vida de una instancia de docker](#cliclo-de-vida-de-una-instancia-de-docker)
+         * [Matar una instancia kill](#matar-una-instancia-kill)
+         * [Matar toda las instancias activas](#matar-toda-las-instancias-activas)
+         * [Borrar una instancia desecha](#borrar-una-instancia-desecha)
+         * [Borrar toda las instancias inactivas](#borrar-toda-las-instancias-inactivas)
+      * [Subir imagen de docker a <code>docker hub</code>](#subir-imagen-de-docker-a-docker-hub)
+         * [push](#push)
+      * [Ejemplos del autor.](#ejemplos-del-autor)
+         * [<a href="./SPARK-HADOOP.md">Spark y hadoop</a>](#spark-y-hadoop)
+         * [<a href="./YOLO-VNC-CUDA-OPENCV.md">YOLO-VNC-cuda-opencv</a>](#yolo-vnc-cuda-opencv)
+   * [Referencias](#referencias)
+
+
+
+
 
 Qué es `docker`?
 ---------------
@@ -267,6 +304,9 @@ foo@bar:~$ sudo docker exec -ti <container-id> /bin/bash
 
 
 
+
+
+
 Cliclo de vida de una `instancia` de docker
 ---------------------------------------------
 
@@ -324,7 +364,10 @@ Options:
 
 
 
-Subir `imagen de docker` a `docker hub`
+
+
+
+Subir un `image` a `docker hub`
 ---------------------------------------
 
 ### `push`
@@ -369,10 +412,6 @@ The push refers to a repository [docker.io/luigymach/hellowork-test]
 f999ae22f308: Mounted from library/hello-world 
 1.0.0: digest: sha256:8072a54ebb3bc136150e2f2860f00a7bf45f13eeb917cca2430fcd0054c8e51b size: 524
 ```
-
-
-
-
 
 
 
