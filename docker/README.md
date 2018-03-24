@@ -327,9 +327,47 @@ Options:
 Subir `imagen de docker` a `docker hub`
 ---------------------------------------
 
-### Commit
+### `push`
+- Es necesario crear una cuentan en `docker hub` 
+- Primero loguearse
 ```console
-foo@bar:~$ sudo docker save
+foo@bar:~$ sudo docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username : 
+
+```
+
+- Para poder ejecutar un `push` se debe tener en cuenta lo siguiente:
+   - El nombre del repositorio obtenido con de `sudo docker images`, es decir `REPOSITORY` debe contener el usuario de `docker hub`. 
+   - En caso no lo tenga ver el comando [tag](#cambiar-de-nombre-a-imagen-tag)
+      - Por ejemplo:
+         - `REPOSITORY` para este ejemplo usaremos `hello-world` y usaremos el usuario docker `lugymach`
+            - `luigymach/<nombre-de-repository>:<version>`
+            - `luigymach/hello-world:1.0.0`
+
+```console
+foo@bar:~$ sudo docker images
+REPOSITORY                               TAG                          IMAGE ID            CREATED             SIZE
+hello-world                              latest                       f2a91732366c        4 months ago        1.85 kB
+
+foo@bar:~$ sudo tag f2a91732366c luigymach/hello-world:1.0.0
+
+```
+   - Tenemos todo listo para ejecutar el comando `push`
+      
+
+```console
+foo@bar:~$ sudo docker images
+REPOSITORY                               TAG                          IMAGE ID            CREATED             SIZE
+hello-world                              latest                       f2a91732366c        4 months ago        1.85 kB
+luigymach/hellowork-test                 1.0.0                        f2a91732366c        4 months ago        1.85 kB
+
+
+foo@bar:~$ sudo docker push luigymach/hellowork-test:1.0.0
+
+The push refers to a repository [docker.io/luigymach/hellowork-test]
+f999ae22f308: Mounted from library/hello-world 
+1.0.0: digest: sha256:8072a54ebb3bc136150e2f2860f00a7bf45f13eeb917cca2430fcd0054c8e51b size: 524
 ```
 
 
@@ -338,10 +376,12 @@ foo@bar:~$ sudo docker save
 
 
 
+***
+***
+***
 
-***
-***
-***
+
+
 
 
 
@@ -361,3 +401,5 @@ Referencias
 
 - https://docs.docker.com/get-started/#docker-concepts
 - https://github.com/brunocascio/docker-espanol
+- https://docker-curriculum.com/
+- https://docs.docker.com/engine/reference/commandline/docker/
