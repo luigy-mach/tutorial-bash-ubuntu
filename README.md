@@ -8,9 +8,9 @@ El objetivo de esta guía es dar conocimientos de nivel básico/intermedio sobre
 Contenido
 ---------
 
-#### [Git and Github](agregar-link)
+### [Git and Github](agregar-link)
 
-#### [Docker](./docker/README.md)
+### [Docker](./docker/README.md)
 
 ### [Comandos BASH](./bash/README.md)
 
