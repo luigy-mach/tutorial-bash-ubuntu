@@ -32,8 +32,7 @@ Qué es `docker`?
 
 - En contraste con una `**maquina virtual **`(VM, *vitual machine*) que ejecuta un sistema operativo completo con `acceso virtual`, es decir que tiene acceso a los recursos de la maquina hospedera (host) esto se da atravez del `hypervisor`
 
-![docker and VM](https://github.com/luigy-mach/tutoriales/tree/master/docker/images/docker-and-VM.png)
-
+![](https://github.com/luigy-mach/tutoriales/tree/master/docker/images/docker-and-VM.png)
 
 
 [Instalacion](./INSTALL.md)
@@ -264,7 +263,6 @@ foo@bar:~$ sudo docker exec -ti <container-id> /bin/bash
   - i: Nos comunicamos con el contenedor de `**modo interactivo**`.
 
 > **NOTA**: Al salir del **modo interactivo** en **Detached Mode**  el contenedor no se detendrá.
-
 
 
 
