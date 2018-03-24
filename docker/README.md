@@ -16,7 +16,7 @@ Qué es `docker`?
 `Docker` es una plataforma para desarrolladores y [sysadmins](https://en.wikipedia.org/wiki/System_administrator) para **desarrollar, deployar y correr** aplicaciones con **containers**. 
 
 ### Imagenes y containers
-- [**`runtime`**](https://stackoverflow.com/questions/3900549/what-is-runtime) en general este termino se refieres a cualquier libreria, framewokr o plataforma donde tu codigo corre. 
+- [ **`runtime`** ](https://stackoverflow.com/questions/3900549/what-is-runtime) en general este termino se refieres a cualquier libreria, framewokr o plataforma donde tu codigo corre. 
 
 - Un `container` se inicia cuando ejecutamos una imagen.
 - Una **`image`** es una paquete ejecutable que incluye todo lo necesario para ejecutar una aplicacion, o sea, codigo, entornos de ejecución(*runtimes*) ,librerias, variables global es y configuracion de archivos.
