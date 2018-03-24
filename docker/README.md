@@ -32,7 +32,7 @@ Qué es `docker`?
 
 - En contraste con una `**maquina virtual **`(VM, *vitual machine*) que ejecuta un sistema operativo completo con `acceso virtual`, es decir que tiene acceso a los recursos de la maquina hospedera (host) esto se da atravez del `hypervisor`
 
-![alt text](./images/dockerAndVM.png)
+![alt text](./images/dockerAndVM.png =250x250)
 
 
 [Instalacion](./INSTALL.md)
