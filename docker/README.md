@@ -231,7 +231,7 @@ Existe dos formas de `crear una instancia` de docker:
 - Podemos ejecutar y usar una terminal en el contenedor:
 
 ```console
-foo@bar:~$ sudo docker **run -ti** ubuntu:14.04 /bin/bash
+foo@bar:~$ sudo docker run -ti ubuntu:14.04 /bin/bash
 ```
   - t: Asigna una tty (hace referencia a una **consola/terminal** en linux)
   - i: Nos comunicamos con el contenedor de **`modo interactivo`**.
@@ -244,7 +244,7 @@ foo@bar:~$ sudo docker **run -ti** ubuntu:14.04 /bin/bash
 - Que pasaria si quieren hacer contenedores que corran servicios 
    - Por ejemplo, un servidor web, el comando es el siguiente:
 ```console
-foo@bar:~$ sudo docker **run -d** -p 8080:8080 python:2.7 python -m SimpleHTTPServer 8080
+foo@bar:~$ sudo docker run -d -p 8080:8080 python:2.7 python -m SimpleHTTPServer 8080
 ```
    - Esto ejecuta un servidor Python (SimpleHTTPServer module), en el puerto 8080. 
    - `-p 8080:8080` le indica a Docker que tiene que hacer un **port forwarding** del contenedor hacia el puerto 8080 de la máquina hospedera (host).
